@@ -22,51 +22,50 @@ public class Main {
         surname = input.nextLine();
         System.out.println("Welcome " + name + "!");
         System.out.println("Balance: $" + balance);
-        while (!eOJ.equals("2")) {
+        while (!eOJ.equals("3")) {
             System.out.println(" What would you like to do?");
             System.out.println("(1) = Deposit Money");
             System.out.println("(2) = Withdraw Money");
+            System.out.println("(3) = Exit");
             eOJ = input.nextLine();
-            if (eOJ.equals("1")) {
-                System.out.println("How much would you like to deposit in cash?");
-                deposit = input.nextDouble();
-                deposit = deposit;
-                System.out.println("The amount is: $" + deposit);
-                System.out.println("(1) Do you want to countinue to deposit?");
-                System.out.println("(2) Cancel.");
-                eOJ = input.nextLine();
+            if (!eOJ.equals("3")) {
                 if (eOJ.equals("1")) {
-                    System.out.println("$" + deposit + " deposited successfully!");
-                    cbalance = balance + deposit;
-                    balance = cbalance;
-                    System.out.println("Current balance: $" + cbalance);
-                    System.out.println("Would you like to do anything else?");
-                    System.out.println("(1) Yes.");
-                    System.out.println("(2) No.");
-                    eOJ = input.nextLine();
-                }
-            } else {
-                System.out.println("How much would you like to withdraw money?");
-                withdraw = input.nextDouble();
-                if (withdraw > balance) {
-                    System.out.println("We can not process this transaction. Would you like to do anything else?");
-                    System.out.println("(1) Yes.");
-                    System.out.println("(2) No.");
-                    eOJ = input.nextLine();
-                } else {
-                    System.out.println("The amount is: $" + withdraw);
-                    System.out.println("(1) Do you want to countinue to withdraw?");
-                    System.out.println("(2) Cancel.");
+                    System.out.println("How much would you like to deposit from primary payment method?");
+                    deposit = input.nextDouble();
+                    deposit = deposit;
+                    System.out.println("The amount is: $" + deposit);
+                    System.out.println("Do you want to countinue to deposit?");
+                    System.out.println("(1) = Yes");
+                    System.out.println("(2) = No");
+                    System.out.println("(3) = Exit");
                     eOJ = input.nextLine();
                     if (eOJ.equals("1")) {
-                        System.out.println("$" + withdraw + " withdraw is successful!");
-                        cbalance = cbalance - withdraw;
+                        System.out.println("$" + deposit + " deposited successfully!");
+                        cbalance = balance + deposit;
                         balance = cbalance;
                         System.out.println("Current balance: $" + cbalance);
-                        System.out.println("Would you like to do anything else?");
-                        System.out.println("(1) Yes.");
-                        System.out.println("(2) No.");
+                    }
+                } else {
+                    System.out.println("How much would you like to withdraw to primary payment method?");
+                    withdraw = input.nextDouble();
+                    if (withdraw > balance) {
+                        System.out.println("We can not process this transaction, because the requested amount is greater than the available balance. Would you like to return the main menu?");
+                        System.out.println("(1) = Yes");
+                        System.out.println("(3) = No");
                         eOJ = input.nextLine();
+                    } else {
+                        System.out.println("The amount is: $" + withdraw);
+                        System.out.println("Do you want to countinue to withdraw?");
+                        System.out.println("(1) = Yes");
+                        System.out.println("(2) = No");
+                        System.out.println("(3) = Exit");
+                        eOJ = input.nextLine();
+                        if (eOJ.equals("1")) {
+                            System.out.println("$" + withdraw + " withdraw is successful!");
+                            cbalance = cbalance - withdraw;
+                            balance = cbalance;
+                            System.out.println("Current balance: $" + cbalance);
+                        }
                     }
                 }
             }
