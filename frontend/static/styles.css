@@ -20,6 +20,17 @@ header a {
 	padding: 10px;
 }
 
+main {
+	border: 1px solid red;
+	max-width: 80%;
+}
+
+main #account-balance-container {
+	border: 1px solid black;
+	border-radius: 15px;
+	width: 300px;
+}
+
 footer {
 	background-color: darkgray;
 	position: absolute;
