@@ -3,20 +3,23 @@
 
 <head>
 	<title>MoneyBuddy</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}/styles.css">
 </head>
 
 <body>
 	<header>
-		<h1>MoneyBuddy</h1>
-		<a href="/">Dashboard</a>
-		<a href="/">Finances</a>
-		<a href="/">Send & Request</a>
-		<a href="">Deals</a>
-		<a href="">Wallet</a>
-		<a href="">Activity</a>
-		<a href="">Help</a>
+		<a href="/">
+			<h1>MoneyBuddy</h1>
+		</a>
+		<a href="/pages/dashboard">Dashboard</a>
+		<a href="/pages/finances">Finances</a>
+		<a href="/pages/help">Send & Request</a>
+		<a href="/pages/deals">Deals</a>
+		<a href="/pages/wallet">Wallet</a>
+		<a href="/pages/activity">Activity</a>
+		<a href="/pages/help">Help</a>
 	</header>
+	<h1 id="page-title">{{ .Page.Title }}</h1>
 	<main>
 		{{ block "main" . }}
 		{{ end }}
