@@ -21,6 +21,9 @@ jobs:
           hugo-version: 'latest'
           # extended: true
 
+      - name: Move to frontend dir
+        run: cd frontend
+
       - name: Build
         run: hugo --minify
 
