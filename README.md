@@ -1,7 +1,5 @@
 # UIS Bank
-
 ## Login Details
-
 Manager
 Username: manager@uisbank.com
 Passwored: manager
@@ -17,9 +15,7 @@ Password: customer1
 Username: customer2@gmail.com
 Password: customer2
 
-
 ## How to Run Details
-
 1. Set up XAMPP.
 2. Start Apache and MySQL together from the XAMPP software.
 3. In a web browser, go to localhost/phpmyadmin
