@@ -1,14 +1,18 @@
-# paypal clone website
+# UIS Bank
 
-## To run the front-end
+## Login Details
 
-1. Open a PowerShell window by shift-rightclicking on the desktop and choosing "Open PowerShell window here".
-2. Run `iwr -useb get.scoop.sh | iex` to install scoop
-3. Run `scoop install hugo` to install Hugo
-4. Open project folder in editor
-5. Run `cd frontend`
-6. Run `hugo server` (starts local web server at `localhost:1313` so you can preview live changes)
+Manager
+Username:   manager@uisbank.com
+Passwored:  manager
 
-## To run the backend
+Cashier
+Username :cashier@uisbank.com
+Password :cashier
 
-TODO
+User
+Username: customer1@gmail.com
+Password: customer1
+
+Username: customer2@gmail.com
+Password: customer2
