@@ -26,5 +26,7 @@ Password: customer2
 4. Click "New" from phpMyAdmin panel on left side.
 5. Cick "Import" from the middle menu.
 6. Upload "mybank.sql" file and save it.
-7. Open a new tab, go to "localhost/login.php"
-8. Done.
+7. Open the installed XAMPP folder from C:// and find the "htdocs" folder.
+8. Delete all the files in it. 
+9. Upload the unzipped UIS-Bank project files.
+10. Open a new tab, go to "localhost/login.php"
