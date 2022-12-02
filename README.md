@@ -3,14 +3,14 @@
 ## Login Details
 
 Manager
-Username:   manager@uisbank.com
-Passwored:  manager
+Username: manager@uisbank.com
+Passwored: manager
 
 Cashier
-Username :cashier@uisbank.com
-Password :cashier
+Username: cashier@uisbank.com
+Password: cashier
 
-User
+Customer
 Username: customer1@gmail.com
 Password: customer1
 
