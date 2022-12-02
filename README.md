@@ -25,5 +25,5 @@ Password: customer2
 7. Upload "mybank.sql" file from the project folder and save it.
 8. Open the installed XAMPP folder from C://, and find the "htdocs" folder.
 9. Delete all the files in it. 
-10.Upload the unzipped UIS-Bank project files.
-11.Open a new tab, go to "localhost/login.php"
+10. Upload the unzipped UIS-Bank project files.
+11. Open a new tab, go to "localhost/login.php"
