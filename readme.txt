@@ -14,3 +14,6 @@ Password: customer1
 
 Username: customer2@gmail.com
 Password: customer2
+
+Username: customer3@gmail.com
+Password: customer3
