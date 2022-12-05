@@ -19,4 +19,4 @@ Username: customer3@gmail.com
 Password: customer3
 
 ## Website Details
-https://uisbank-online.preview-domain.com/login.php
+https://uishomework-online.preview-domain.com/login.php
