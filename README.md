@@ -27,6 +27,4 @@ Username: customer3@gmail.com
 Password: customer3
 
 ## Website Details
-Temp. domain: https://uishomework-online.preview-domain.com/login.php 
-
-Another option: http://uishomework.online/
+URL: http://uishomework.online/
