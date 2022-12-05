@@ -28,3 +28,6 @@ Password: customer3
 
 ## Website Details
 URL: http://uishomework.online/
+
+## Database Creation Details
+Please use the "mybank.sql" file for uploading+creating your database. Please do not forget the change the login credentials on login.php, index.php of based on your  SQL login credentials.
