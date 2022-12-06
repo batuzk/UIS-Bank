@@ -59,6 +59,7 @@ if(!isset($_SESSION['managerId'])){ header('location:login.php');}
           <div class="alert alert-success w-50 mx-auto">
             <h5>Write notice for <?php echo $row['name'] ?></h5>
             <input type="hidden" name="userId" value="<?php echo $row['id'] ?>">
+            <!-- Req. 2.1.0 Manager should be allowed to send notices after text input for specific customers. -->
             <textarea class="form-control" name="notice" required placeholder="Write your message."></textarea>
             <button type="submit" name="send" class="btn btn-primary btn-block btn-sm my-1">Send</button>
           </div>
