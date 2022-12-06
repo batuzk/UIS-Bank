@@ -44,7 +44,8 @@ if(!isset($_SESSION['managerId'])){ header('location:login.php');}
   </div>
 </nav><br><br><br>
 <?php
-if (isset($_POST['saveAccount']))
+  //Req. 2.3.0 Manager should be allowed to create new customers after providing name, email, password, address, branch, source of income, phone, and other required input details.
+if (isset($_POST['saveAccount'])) 
 {
   if (!$con->query("insert into useraccounts (name,accountNo,accountType,city,address,email,password,balance,source,number,branch) values ('$_POST[name]','$_POST[accountNo]','$_POST[accountType]','$_POST[city]','$_POST[address]','$_POST[email]','$_POST[password]','$_POST[balance]','$_POST[source]','$_POST[number]','$_POST[branch]')")) {
     echo "<div claass='alert alert-success'>Failed. Error is:".$con->error."</div>";
@@ -155,6 +156,7 @@ if (isset($_GET['del']) && !empty($_GET['del']))
       <div class="modal-body">
        <form method="POST">
           Enter Details
+         <!-- Req. 2.2.0 Manager should be allowed to create new staff/cashiers after providing new email and password details. -->
          <input class="form-control w-75 mx-auto" type="email" name="email" required placeholder="Email">
          <input class="form-control w-75 mx-auto" type="password" name="password" required placeholder="Password">
       </div>
