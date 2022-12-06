@@ -63,8 +63,9 @@ if(!isset($_SESSION['userId'])){ header('location:login.php');}
   <div class="card  w-75 mx-auto">
   <div class="card-header text-center">
     Funds Transfer
-    /* Req. 1.1.0 Customer/user should be allowed to send money after input account number of receiver. */
-  </div>
+    <!-- /* Req. 1.1.0 Customer/user should be allowed to send money after input account number of receiver. */ -->
+
+  </div>  
   <div class="card-body">
       <form method="POST" action="transfer.php">
           <div class="alert alert-success w-50 mx-auto">
@@ -110,7 +111,8 @@ if(!isset($_SESSION['userId'])){ header('location:login.php');}
                     <input type='text' class='form-control' value="<?=$row2['name']?>" readonly required>
                     Account Holder Bank Name.
                     <input type='text' class='form-control' value='<?php echo bankName ?>' readonly required>
-                    Enter Amount for tranfer.
+                    Enter Amount for tranfer.     <!-- /* Req. 1.1.1 Amount of the money should be provided. */ -->
+
                     <input type='number' name='amount' class='form-control' min='1' max="<?=$userData['balance']?>" required>
                     <button type='submit' name='transferSelf' value="transferSelf" class='btn btn-primary btn-bloc btn-sm my-1'>Tranfer</button>
                   </form>
