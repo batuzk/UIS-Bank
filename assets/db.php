@@ -1,5 +1,5 @@
 <?php 
-    $con = new mysqli('localhost','u854424063_manager','dO;hr&uT4','u854424063_mybank');
+    $con = new mysqli('localhost','u854424063_manager','dO;hr&uT4','u854424063_mybank'); //Database details.
     define('bankName', 'UIS Bank');
     $id = $_SESSION['userId'];
     $ar = $con->query("select * from useraccounts,branch where id = '$id' AND useraccounts.branch = branch.branchId");
