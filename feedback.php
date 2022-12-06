@@ -68,6 +68,7 @@ if(!isset($_SESSION['userId'])){ header('location:login.php');}
       <form method="POST">
           <div class="alert alert-success w-50 mx-auto">
             <h5>Enter your message.</h5>
+        <!-- 1.2.0 Customer/user should be allowed to send help tickets after text inputs.-->
             <textarea class="form-control" name="msg" required placeholder="Write your message."></textarea>
             <button type="submit" name="send" class="btn btn-primary btn-block btn-sm my-1">Send</button>
           </div>
