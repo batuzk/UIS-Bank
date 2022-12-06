@@ -63,11 +63,12 @@ if(!isset($_SESSION['userId'])){ header('location:login.php');}
   <div class="card  w-75 mx-auto">
   <div class="card-header text-center">
     Funds Transfer
+    /* Req. 1.1.0 Customer/user should be allowed to send money after input account number of receiver. */
   </div>
   <div class="card-body">
       <form method="POST" action="transfer.php">
           <div class="alert alert-success w-50 mx-auto">
-            <h5>New Transfer</h5>
+            <h5>New Transfer</h5> 
             <input type="text" name="otherNo" class="form-control " placeholder="Enter Receiver's Account Number" required>
             <button type="submit" name="get" value="get" class="btn btn-primary btn-bloc btn-sm my-1">Get Account Info</button>
           </div>
@@ -126,7 +127,6 @@ if(!isset($_SESSION['userId'])){ header('location:login.php');}
     <?php
     if (isset($_POST['transferSelf']))
     {
-        // echo "Ahsan";
       $amount = $_POST['amount'];
       setBalance($amount,'debit',$userData['accountNo']);
       setBalance($amount,'credit',$_POST['otherNo']);
