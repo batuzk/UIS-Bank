@@ -11,7 +11,7 @@ if(!isset($_SESSION['userId'])){ header('location:login.php');}
   <?php require 'assets/function.php'; ?>
 
 </head>
-<body style="background:#ffffff;background-size: 100%"> //Background details.
+<body style="background:#ffffff;background-size: 100%">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
  <a class="navbar-brand" href="#">
    <!--  <i class="d-inline-block  fa fa-building fa-fw"></i> --><?php echo bankName; ?>
