@@ -6,12 +6,12 @@ if(!isset($_SESSION['userId'])){ header('location:login.php');}
 <html>
 <head>
   <title>Banking</title>
-  <?php require 'assets/autoloader.php'; ?>
+  <?php require 'assets/autoloader.php'; ?> 
   <?php require 'assets/db.php'; ?>
   <?php require 'assets/function.php'; ?>
 
 </head>
-<body style="background:#ffffff;background-size: 100%">
+<body style="background:#ffffff;background-size: 100%"> //Background details.
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
  <a class="navbar-brand" href="#">
    <!--  <i class="d-inline-block  fa fa-building fa-fw"></i> --><?php echo bankName; ?>
