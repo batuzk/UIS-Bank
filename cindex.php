@@ -73,6 +73,7 @@ if(!isset($_SESSION['cashId'])){ header('location:login.php');}
       <form method="POST">
           <div class="alert alert-success w-50 mx-auto">
             <h5>Enter Account Number</h5>
+            <!-- Req. 3.1.0 Cashier should provide a customer account number for making transactions. -->
             <input type="text" name="otherNo" class="form-control " placeholder="Enter account number." required>
             <button type="submit" name="get" value="get" class="btn btn-primary btn-bloc btn-sm my-1">Get Account Info</button>
           </div>
@@ -104,6 +105,7 @@ if(!isset($_SESSION['cashId'])){ header('location:login.php');}
                   </div>
                   <div class='col'>
                     Bank Balance
+                  <!-- Req. 3.1.1 Cashier should provide a transaction number, and amount number for making deposit or withdrawal transaction for a customer’s needs. -->
                     <input type='text' class='form-control my-1'  value='<?=$row2["balance"]?>' readonly required>
                     <input type='number' class='form-control my-1' name='checkno' placeholder='Write Check Number' required>
                     <input type='number' class='form-control my-1' name='amount' placeholder='Write Amount' max='<?=$row2["balance"]?>' required>
