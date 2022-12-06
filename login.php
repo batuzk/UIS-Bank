@@ -29,7 +29,7 @@
 		      $error = "<div class='alert alert-warning text-center rounded-0'>Username or password wrong try again!</div>";
 		    }
 		}
-		if (isset($_POST['cashierLogin']))
+		if (isset($_POST['cashierLogin'])) /* Req. 3.0.0 Cashier should provide an email address and password on the login page. */
 		{
 			$error = "";
   			$user = $_POST['email'];
@@ -49,7 +49,7 @@
 		      $error = "<div class='alert alert-warning text-center rounded-0'>Username or password wrong try again!</div>";
 		    }
 		}
-		if (isset($_POST['managerLogin']))
+		if (isset($_POST['managerLogin'])) /* Req. 2.0.0 Manager should provide an email address and password on the login page. */
 		{
 			$error = "";
   			$user = $_POST['email'];
