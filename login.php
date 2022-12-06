@@ -9,7 +9,7 @@
     define('bankName', 'UIS Bank');
 	
 		$error = "";
-		if (isset($_POST['userLogin']))
+		if (isset($_POST['userLogin'])) /* Req. 1.0.0 The customer/user should provide an email address and password on the login page. */
 		{
 			$error = "";
   			$user = $_POST['email'];
